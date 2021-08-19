@@ -2,16 +2,22 @@
 	box-sizing: border-box;
 }
 
+/*Background Image*/
 body {
 	background-image: url(./images/elec_bg.jpg);
+	background-position: center;
+    background-repeat: no-repeat;
 	background-size: cover;
 }
+/*End of Background Image*/
 
+/*Navbar*/
 #my-navbar {
 	background-color: #3a3a46;
 	margin-bottom: 5px;
 	padding-right: 5px;
 	padding-left: 5px;
+	font-size: 1.15rem;
 }
 
 #my-navbar-name {
@@ -28,30 +34,122 @@ body {
 	padding-left: 5px;
 }
 
+.nav-link {
+	padding: 8px 20px;
+	font-size: 1rem;
+}
+
+/*.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 21.1%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}*/
+/*End of Navbar*/
+
+/*Text*/
+.nav-link {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
 h2 {
-	font-family: 'Roboto Mono', monospace;
+	font-family: 'Roboto Slab', serif;
 	font-size: 5rem;
+	color: #25252e;
+	text-decoration: underline;
+	text-shadow: 0.4px 0.4px #7e7e82;
+}
+
+p, a {
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5rem;
+	color: #d6d6cf;
+	text-decoration-style: none;
+	text-shadow: 0.4px 0.4px #403211;
+}
+
+strong{
+	font-size: 10rem;
+	color: #f1be3f;
+	text-shadow: 0.5px 0.5px #403211;
 }
 
 em	{
-	color: 
+	text-shadow: 0.5px 0.5px #403211;
 }
 
+a:hover {
+	color: #f1be3f;
+}
+/*End of Text*/
+
 #my-picture {
+	display: block;
 	height: 350px;
 	width: 370px;
 	border-radius: 50%;
+	margin: 3rem auto;
 }
 
 .container div {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
 }
 
-.container {
+button {
+	background-color: #f1be3f;
 	color: ;
+	text-align: center;
+	padding: 5px;
 }
-h2 {
-	text-decoration: underline;
-	text-decoration-color: ;
+
+#about-me-page {
+	margin: 5rem 2rem;
+}
+
+#about-me-card > h2 {
+	text-decoration: none;
 }
