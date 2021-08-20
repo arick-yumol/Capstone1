@@ -42,7 +42,6 @@
         <!-- Top Navbar -->
 		<nav id="my-navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
 			<!-- <a id="my-navbar-name" class="navbar-brand" href="#">Arick Yumol</a> -->
-            <!-- fix spacing between navbar elements -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			    <span class="navbar-toggler-icon"></span>
 			</button>
@@ -129,21 +128,43 @@
 
             <!-- improve carousel and add short description for each project (?) -->
             <!-- ask what is React Frontend Ecommerce (?) -->
-            <div>
-                <h2 id="projects-page">Projects</h2>
+            <div id="projects-page">
+                <h2>Projects</h2>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="img-fluid" src="./images/zuitt.png" alt="First slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Homepage</h5>
+                                <p>A simple homepage using HTML</p>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-fluid" src="./images/css.png" alt="Second slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>CSS Selectors</h5>
+                                <p>An short CSS introduction about Selectors and Combinators</p>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-fluid" src="./images/bootstrap2.png" alt="Third slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Bootstrap</h5>
+                                <p>A simple homepage using HTML</p>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-fluid" src="./images/bootstrap.png" alt="Fourth slide">
+                            <!-- <div class="carousel-caption d-none d-md-block">
+                                <h5>Zuitt Homepage</h5>
+                                <p>A simple homepage using HTML</p>
+                            </div> -->
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -160,8 +181,8 @@
 
 			<!-- Repositories-->
             <!-- add icons -->
-			<div>
-				<h2 id="repositories-page">Repositories</h2>
+			<div id="repositories-page">
+				<h2>Repositories</h2>
 				<ul>
 					<li>
 						<a href="https://gitlab.com/arick_yumol"><i class="fab fa-gitlab"></i> GitLab</a>
@@ -174,26 +195,24 @@
 			<!-- End of Repositories-->
 
 			<!-- Contact Me -->
-            <!-- add icons and message board(?) -->
-			<div>
-				<h2 id="contact-me-page">Contact Me</h2>
-				<ul>
-					<li>
-						<a href="https://www.linkedin.com/in/arick-yumol/"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- verify how to use favicon -->
-					</li>
-					<!-- <li>
-						<a href="">Gmail</a> Add e-mail later
-					</li> -->
-					<!-- <li>
-						<p>Contact no.: (+63)9XX-XXX-XXXX</p> Add contact number later
-					</li> -->
-				</ul>
+			<div id="contact-me-page">
+				<h2>Contact Me</h2>
+				<div class="row">
+                    <div class="col-12 col-lg-6 m-0">
+                        <li>
+                            <a href="https://www.linkedin.com/in/arick-yumol/"><i class="fab fa-linkedin"></i> LinkedIn</a> <!-- verify how to use favicon -->
+                        </li>
+                        <li>
+                            <p><i class="fas fa-mobile-alt"></i> (+63)9XX-XXX-XXXX</p>
+                        </li>
+                    </ul>
+                </div>
 			</div>
 			<!-- End of Contact Me -->
 		</div>
 
         <!-- Footer -->
-        <a href="http://www.freepik.com">Designed by Freepik</a>
+        <a id="footer-page" href="http://www.freepik.com">Designed by Freepik</a>
         <!-- End of Footer -->
 
 		<!-- Bootstrap Script-->
