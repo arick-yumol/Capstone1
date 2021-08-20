@@ -153,3 +153,11 @@ button {
 #about-me-card > h2 {
 	text-decoration: none;
 }
+
+body li {
+	list-style-type: none;
+}
+
+#home-page + a {
+	size: 1px;
+}
